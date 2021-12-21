@@ -8,9 +8,11 @@
       type="image/x-icon"
       sizes="16*16"
     />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
   <title>Abey George's Resume</title>
-  <script>PDFObject.embed("https://github.com/gabey14/Resume/raw/master/Abey-George-Resume.pdf", "#example1");</script>
-  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.12.313/build/pdf.min.js"></script>
 </head>
 <!--   <body style="width:100%; height:100%; margin:0;"> -->
   <!-- <body style="height: 100%; width: 100%; overflow: hidden; margin:0px; background-color: rgb(82, 86, 89);"> -->
@@ -25,3 +27,10 @@
 </html>
 
 
+<script type="text/javascript">
+  $(document).ready(function(){
+  // $('#example1').load('../header-ads.html');
+  //   $('#footer').load('../footer-ads.html');
+    PDFObject.embed("https://github.com/gabey14/Resume/raw/master/Abey-George-Resume.pdf", "#example1");
+  });
+</script>
