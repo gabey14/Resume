@@ -34,7 +34,7 @@
                 if ($($('#' + key)).find('iframe').contents().find("body").contents().length == 0) {
                     remaining_embeds++;
                     console.log(key + " resetting");
-                    $($('#' + key)).find('iframe').attr('src', src='https://docs.google.com/viewer?url=' + $('#' + key).data('url') + '&embedded=true');
+                    $($('#' + key)).find('iframe').attr('src', src='https://docs.google.com/gview??url=' + $('#' + key).data('url') + '&embedded=true');
                 }
             }
             catch(err) {
